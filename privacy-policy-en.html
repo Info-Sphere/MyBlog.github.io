@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Your Niche Blog Title</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS file -->
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Google Analytics Tracking Code Placeholder -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    <style>
+        /* Optional custom styles for dark mode */
+        .dark {
+            background-color: #1a202c;
+            color: #e2e8f0;
+        }
+        .dark .bg-white {
+            background-color: #2d3748;
+        }
+        .dark .text-gray-800 {
+            color: #e2e8f0;
+        }
+        .dark .text-gray-700 {
+            color: #cbd5e0;
+        }
+        .dark .text-gray-600 {
+            color: #a0aec0;
+        }
+        .dark .border-b, .dark .border-t, .dark .border {
+            border-color: #4a5568;
+        }
+        .dark .bg-blue-50 {
+            background-color: #4a5568;
+            color: #cbd5e0;
+            border-color: #6366f1;
+        }
+        .dark .text-blue-800 {
+            color: #90cdf4;
+        }
+        .dark .text-blue-700 {
+            color: #90cdf4;
+        }
+        .dark .hover\:text-blue-200:hover {
+            color: #bfdbfe;
+        }
+        .dark .hover\:underline:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Header Section -->
+    <header class="bg-blue-600 text-white p-4 shadow-md rounded-b-lg">
+        <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center relative">
+            <h1 class="text-3xl font-bold mb-2 sm:mb-0">
+                <a href="index.html" class="hover:text-blue-200">Your Awesome Niche Blog</a>
+            </h1>
+            <nav>
+                <ul class="flex space-x-4 items-center">
+                    <li><a href="about-en.html" class="hover:text-blue-200 text-lg">About</a></li>
+                    <li><a href="contact-en.html" class="hover:text-blue-200 text-lg">Contact</a></li>
+                    <li><a href="privacy-policy-en.html" class="hover:text-blue-200 text-lg">Privacy Policy</a></li>
+                    <li>
+                        <!-- Language Selector -->
+                        <select id="languageSelector" class="bg-blue-700 text-white p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <option value="en" selected>English</option>
+                            <option value="es">Español</option>
+                            <option value="ca">Català</option>
+                        </select>
+                    </li>
+                    <li>
+                        <!-- Dark Mode Toggle -->
+                        <button id="themeToggle" class="p-2 rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors duration-200" aria-label="Toggle dark mode">
+                            <svg id="moonIcon" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                            </svg>
+                            <svg id="sunIcon" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h1M3 12H2m15.325-6.675l.707-.707M6.675 17.325l-.707.707M20.325 17.325l-.707.707M3.675 6.675l.707-.707M12 18a6 6 0 100-12 6 6 0 000 12z" />
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container mx-auto p-4 flex-grow bg-white rounded-lg shadow-md my-6">
+        <h1 class="text-3xl font-bold text-gray-800 mb-6 border-b pb-2">Privacy Policy</h1>
+        <div class="prose max-w-none text-gray-700 leading-relaxed">
+            <p>Your privacy is very important to us. This Privacy Policy outlines the types of information we collect, how we use it, and the steps we take to protect your data when you visit **Your Awesome Niche Blog**.</p>
+
+            <h2>Information We Collect</h2>
+            <p>We may collect information in the following ways:</p>
+            <ul class="list-disc list-inside ml-4 mb-4">
+                <li>**Personal Information:** When you subscribe to our newsletter, leave a comment, or contact us directly, you may provide us with personal information such as your name and email address.</li>
+                <li>**Non-Personal Information:** We automatically collect certain non-personal information when you visit our blog, such as your IP address, browser type, operating system, referring URLs, and pages viewed. This data is collected through Google Analytics to understand website traffic and user behavior.</li>
+                <li>**Cookies:** We use cookies to enhance your browsing experience, personalize content, analyze site usage, and serve advertisements. You can disable cookies through your browser settings, but this may affect certain functionalities of the blog.</li>
+            </ul>
+
+            <h2>How We Use Your Information</h2>
+            <p>The information we collect is used to:</p>
+            <ul class="list-disc list-inside ml-4 mb-4">
+                <li>Operate and maintain our blog.</li>
+                <li>Improve user experience and content quality.</li>
+                <li>Respond to your comments or inquiries.</li>
+                <li>Send you newsletters or promotional materials (if you opt-in).</li>
+                <li>Analyze website traffic and trends.</li>
+                <li>Deliver targeted advertisements.</li>
+            </ul>
+
+            <h2>Third-Party Services</h2>
+            <p>We use third-party services like Google Analytics and potentially Google AdSense. These services may collect and process data in accordance with their own privacy policies. We do not control how these third parties use your data.</p>
+            <ul class="list-disc list-inside ml-4 mb-4">
+                <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Google Privacy Policy</a></li>
+            </ul>
+
+            <h2>Data Security</h2>
+            <p>We implement reasonable security measures to protect your information. However, no method of transmission over the Internet or electronic storage is 100% secure. Therefore, we cannot guarantee absolute security.</p>
+
+            <h2>Changes to This Privacy Policy</h2>
+            <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes.</p>
+
+            <h2>Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+            <p class="font-bold text-blue-600">privacy@[yournicheblog].com</p>
+        </div>
+    </main>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="scroll-to-top bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white p-4 mt-6 rounded-t-lg">
+        <div class="container mx-auto text-center text-sm">
+            <p>&copy; 2025 Your Niche Blog. All rights reserved.</p>
+            <p class="mt-2">
+                <a href="terms-of-service-en.html" class="hover:text-gray-300">Terms of Service</a> |
+                <a href="privacy-policy-en.html" class="hover:text-gray-300">Privacy Policy</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Shared JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

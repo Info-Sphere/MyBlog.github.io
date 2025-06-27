@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Your Niche Blog Title</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS file -->
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Google Analytics Tracking Code Placeholder -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    <style>
+        /* Optional custom styles for dark mode */
+        .dark {
+            background-color: #1a202c;
+            color: #e2e8f0;
+        }
+        .dark .bg-white {
+            background-color: #2d3748;
+        }
+        .dark .text-gray-800 {
+            color: #e2e8f0;
+        }
+        .dark .text-gray-700 {
+            color: #cbd5e0;
+        }
+        .dark .text-gray-600 {
+            color: #a0aec0;
+        }
+        .dark .border-b, .dark .border-t, .dark .border {
+            border-color: #4a5568;
+        }
+        .dark .bg-blue-50 {
+            background-color: #4a5568;
+            color: #cbd5e0;
+            border-color: #6366f1;
+        }
+        .dark .text-blue-800 {
+            color: #90cdf4;
+        }
+        .dark .text-blue-700 {
+            color: #90cdf4;
+        }
+        .dark .hover\:text-blue-200:hover {
+            color: #bfdbfe;
+        }
+        .dark .hover\:underline:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Header Section -->
+    <header class="bg-blue-600 text-white p-4 shadow-md rounded-b-lg">
+        <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center relative">
+            <h1 class="text-3xl font-bold mb-2 sm:mb-0">
+                <a href="index.html" class="hover:text-blue-200">Your Awesome Niche Blog</a>
+            </h1>
+            <nav>
+                <ul class="flex space-x-4 items-center">
+                    <li><a href="about-en.html" class="hover:text-blue-200 text-lg">About</a></li>
+                    <li><a href="contact-en.html" class="hover:text-blue-200 text-lg">Contact</a></li>
+                    <li><a href="privacy-policy-en.html" class="hover:text-blue-200 text-lg">Privacy Policy</a></li>
+                    <li>
+                        <!-- Language Selector -->
+                        <select id="languageSelector" class="bg-blue-700 text-white p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <option value="en" selected>English</option>
+                            <option value="es">Español</option>
+                            <option value="ca">Català</option>
+                        </select>
+                    </li>
+                    <li>
+                        <!-- Dark Mode Toggle -->
+                        <button id="themeToggle" class="p-2 rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors duration-200" aria-label="Toggle dark mode">
+                            <svg id="moonIcon" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                            </svg>
+                            <svg id="sunIcon" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h1M3 12H2m15.325-6.675l.707-.707M6.675 17.325l-.707.707M20.325 17.325l-.707.707M3.675 6.675l.707-.707M12 18a6 6 0 100-12 6 6 0 000 12z" />
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container mx-auto p-4 flex-grow bg-white rounded-lg shadow-md my-6">
+        <h1 class="text-3xl font-bold text-gray-800 mb-6 border-b pb-2">Terms of Service</h1>
+        <div class="prose max-w-none text-gray-700 leading-relaxed">
+            <p>Welcome to **Your Awesome Niche Blog**! These Terms of Service ("Terms") govern your use of our website. By accessing or using our blog, you agree to comply with and be bound by these Terms. If you do not agree with any part of these Terms, you must not use our blog.</p>
+
+            <h2>1. Use of the Blog</h2>
+            <p>This blog provides content for informational and educational purposes related to **[Your Specific Niche]**. You agree to use the blog only for lawful purposes and in a way that does not infringe the rights of, restrict, or inhibit anyone else's use and enjoyment of the blog.</p>
+
+            <h2>2. Intellectual Property</h2>
+            <p>All content on this blog, including text, graphics, logos, images, and software, is the property of **Your Awesome Niche Blog** or its content suppliers and protected by copyright and intellectual property laws. You may not reproduce, distribute, modify, create derivative works of, publicly display, publicly perform, republish, download, store, or transmit any of the material on our blog, except as generally permitted by copyright law for personal, non-commercial use.</p>
+
+            <h2>3. User-Generated Content</h2>
+            <p>If you post comments or submit content to our blog, you grant **Your Awesome Niche Blog** a non-exclusive, royalty-free, perpetual, and worldwide license to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, and display such content in any media. You represent and warrant that you own or control all rights to the content you post and that the content does not violate these Terms or infringe the rights of any third party.</p>
+
+            <h2>4. Disclaimer of Warranties</h2>
+            <p>The information on this blog is provided "as is" without any warranties of any kind, either express or implied. We do not warrant the accuracy, completeness, or usefulness of this information. Any reliance you place on such information is strictly at your own risk.</p>
+
+            <h2>5. Limitation of Liability</h2>
+            <p>In no event will **Your Awesome Niche Blog**, its affiliates, or their licensors, service providers, employees, agents, officers, or directors be liable for damages of any kind, arising out of or in connection with your use, or inability to use, our blog, any websites linked to it, any content on the blog, or such other websites.</p>
+
+            <h2>6. Links to Other Websites</h2>
+            <p>Our blog may contain links to third-party websites. These links are provided for your convenience only. We have no control over the contents of those sites or resources, and accept no responsibility for them or for any loss or damage that may arise from your use of them.</p>
+
+            <h2>7. Changes to the Terms</h2>
+            <p>We may revise and update these Terms of Service from time to time in our sole discretion. All changes are effective immediately when we post them. Your continued use of the blog following the posting of revised Terms means that you accept and agree to the changes.</p>
+
+            <h2>8. Governing Law</h2>
+            <p>These Terms shall be governed and construed in accordance with the laws of [Your Country/State], without regard to its conflict of law provisions.</p>
+
+            <h2>9. Contact Information</h2>
+            <p>If you have any questions about these Terms of Service, please contact us at:</p>
+            <p class="font-bold text-blue-600">contact@[yournicheblog].com</p>
+        </div>
+    </main>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="scroll-to-top bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white p-4 mt-6 rounded-t-lg">
+        <div class="container mx-auto text-center text-sm">
+            <p>&copy; 2025 Your Niche Blog. All rights reserved.</p>
+            <p class="mt-2">
+                <a href="terms-of-service-en.html" class="hover:text-gray-300">Terms of Service</a> |
+                <a href="privacy-policy-en.html" class="hover:text-gray-300">Privacy Policy</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Shared JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

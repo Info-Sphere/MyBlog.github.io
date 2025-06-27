@@ -1,0 +1,34 @@
+MyNicheBlog/
+├── index.html
+├── style.css
+├── script.js
+├── about.html
+├── contact.html
+├── privacy-policy.html
+├── images/
+│   ├── hero-image.jpg
+│   └── ...
+└── posts/
+    ├── first-post-title.html
+    ├── second-post-title.html
+    └── ...
+
+ Docs
+ https://docs.google.com/document/d/1wEfE1nOEszGBDPtM1TSKvCqa8Xb_qy1PXACrk_20nTo/edit?tab=t.92pq29o2ol0u
+
+MyNicheBlog/
+├── index.html                  (Your English Homepage)
+├── style.css                   (Your main CSS file)
+├── script.js                   (New: Contains shared JavaScript)
+├── about-en.html               (English About page)
+├── contact-en.html             (English Contact page)
+├── privacy-policy-en.html      (English Privacy Policy)
+├── terms-of-service-en.html    (English Terms of Service)
+├── images/
+│   ├── hero-image.jpg
+│   └── ... (your images)
+└── posts/
+    ├── post-template-en.html   (English Post Template)
+    ├── the-ultimate-guide-to-niche-topic-1-en.html (Example English Post)
+    └── mastering-niche-topic-2-en.html (Example English Post)
+    └── ... (your other posts)

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Niche Blog Title</title>
+    <!-- Tailwind CSS CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS file for additional styling -->
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Google Analytics Tracking Code Placeholder -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    <style>
+        /* Optional custom styles for elements not fully covered by Tailwind */
+        .dark {
+            background-color: #1a202c; /* Tailwind 'bg-gray-900' */
+            color: #e2e8f0; /* Tailwind 'text-gray-200' */
+        }
+        .dark .bg-white {
+            background-color: #2d3748; /* Tailwind 'bg-gray-800' */
+        }
+        .dark .text-gray-800 {
+            color: #e2e8f0;
+        }
+        .dark .text-gray-700 {
+            color: #cbd5e0;
+        }
+        .dark .text-gray-600 {
+            color: #a0aec0;
+        }
+        .dark .border-b, .dark .border-t, .dark .border {
+            border-color: #4a5568; /* Tailwind 'border-gray-600' */
+        }
+        .dark .bg-gray-100 {
+            background-color: #4a5568;
+        }
+        .dark .text-blue-700 {
+            color: #90cdf4; /* Tailwind 'text-blue-300' */
+        }
+        .dark .list-disc a {
+            color: #90cdf4;
+        }
+        .dark .hover\:text-blue-200:hover {
+            color: #bfdbfe; /* Tailwind 'text-blue-200' */
+        }
+        .dark .hover\:underline:hover {
+            text-decoration: underline;
+        }
+        .dark .bg-yellow-100 {
+            background-color: #4a5568; /* Darker background for ads in dark mode */
+            border-color: #6366f1; /* Tailwind 'border-indigo-500' */
+            color: #cbd5e0;
+        }
+        .dark .bg-green-500 {
+            background-color: #38a169; /* Darker green for buttons */
+        }
+        .dark .hover\:bg-green-600:hover {
+            background-color: #2f855a;
+        }
+        .dark .bg-blue-500 {
+            background-color: #4299e1; /* Darker blue for buttons */
+        }
+        .dark .hover\:bg-blue-600:hover {
+            background-color: #3182ce;
+        }
+        .dark .bg-yellow-600 {
+            background-color: #d69e2e;
+        }
+        .dark .hover\:bg-yellow-700:hover {
+            background-color: #b7791f;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Header Section -->
+    <header class="bg-blue-600 text-white p-4 shadow-md rounded-b-lg">
+        <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center relative">
+            <h1 class="text-3xl font-bold mb-2 sm:mb-0">
+                <a href="index.html" class="hover:text-blue-200">Your Awesome Niche Blog</a>
+            </h1>
+            <nav>
+                <ul class="flex space-x-4 items-center">
+                    <li><a href="about-en.html" class="hover:text-blue-200 text-lg">About</a></li>
+                    <li><a href="contact-en.html" class="hover:text-blue-200 text-lg">Contact</a></li>
+                    <li><a href="privacy-policy-en.html" class="hover:text-blue-200 text-lg">Privacy Policy</a></li>
+                    <li>
+                        <!-- Language Selector -->
+                        <select id="languageSelector" class="bg-blue-700 text-white p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <option value="en" selected>English</option>
+                            <option value="es">Español</option>
+                            <option value="ca">Català</option>
+                        </select>
+                    </li>
+                    <li>
+                        <!-- Dark Mode Toggle -->
+                        <button id="themeToggle" class="p-2 rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors duration-200" aria-label="Toggle dark mode">
+                            <svg id="moonIcon" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                            </svg>
+                            <svg id="sunIcon" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h1M3 12H2m15.325-6.675l.707-.707M6.675 17.325l-.707.707M20.325 17.325l-.707.707M3.675 6.675l.707-.707M12 18a6 6 0 100-12 6 6 0 000 12z" />
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container mx-auto p-4 flex flex-col lg:flex-row gap-6 flex-grow content-area">
+        <!-- Blog Posts Section -->
+        <section class="lg:w-3/4 bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6 border-b pb-2">Latest Posts</h2>
+
+            <!-- Example Blog Post 1 -->
+            <article class="mb-8 pb-8 border-b border-gray-200 last:border-b-0">
+                <h3 class="text-xl font-semibold text-blue-700 mb-2">
+                    <a href="posts/the-ultimate-guide-to-niche-topic-1-en.html" class="hover:underline">The Ultimate Guide to [Your Niche Topic 1]</a>
+                </h3>
+                <p class="text-gray-600 text-sm mb-4">Published on June 27, 2025 by [Your Name]</p>
+                <img src="images/post-1-image.png" alt="Placeholder image for blog post 1" class="w-full h-auto rounded-md mb-4 object-cover">
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+                <a href="posts/the-ultimate-guide-to-niche-topic-1-en.html" class="inline-block bg-green-500 text-white px-5 py-2 rounded-md hover:bg-green-600 transition-colors duration-200">Read More & Get [Product/Service]!</a>
+            </article>
+
+            <!-- Example Blog Post 2 -->
+            <article class="mb-8 pb-8 border-b border-gray-200 last:border-b-0">
+                <h3 class="text-xl font-semibold text-blue-700 mb-2">
+                    <a href="posts/mastering-niche-topic-2-en.html" class="hover:underline">Mastering [Your Niche Topic 2]: Tips and Tricks</a>
+                </h3>
+                <p class="text-gray-600 text-sm mb-4">Published on June 20, 2025 by [Your Name]</p>
+                <img src="https://placehold.co/800x400/4CAF50/FFFFFF?text=Awesome+Image+2" alt="Placeholder image for blog post 2" class="w-full h-auto rounded-md mb-4 object-cover">
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <!-- Placeholder for AdSense Ad Unit -->
+                <div class="bg-gray-100 p-4 border border-gray-300 rounded-md text-center text-gray-500 text-sm">
+                    ADVERTISEMENT (Google AdSense Placeholder)
+                </div>
+                <a href="posts/mastering-niche-topic-2-en.html" class="inline-block bg-green-500 text-white px-5 py-2 rounded-md hover:bg-green-600 transition-colors duration-200">Read More!</a>
+            </article>
+
+            <!-- Add more blog posts as needed -->
+        </section>
+
+        <!-- Sidebar Section -->
+        <aside class="lg:w-1/4 bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4 border-b pb-2">About This Blog</h3>
+            <p class="text-gray-700 mb-6">
+                Welcome to my niche blog about **[Your Specific Niche]**! Here, you'll find in-depth articles, helpful guides, and honest reviews to help you **[achieve a goal related to your niche]**.
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-4 border-b pb-2">Popular Posts</h3>
+            <ul class="list-disc list-inside mb-6 text-blue-600">
+                <li><a href="posts/post-title-1-en.html" class="hover:underline">Post Title 1</a></li>
+                <li><a href="posts/post-title-2-en.html" class="hover:underline">Post Title 2</a></li>
+                <li><a href="posts/post-title-3-en.html" class="hover:underline">Post Title 3</a></li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-4 border-b pb-2">Affiliate Offer / Ad Slot</h3>
+            <div class="bg-yellow-100 p-4 border border-yellow-300 rounded-md text-center text-gray-700 text-sm">
+                <p class="font-bold mb-2">Special Offer: Get X% Off [Related Product]!</p>
+                <img src="https://placehold.co/250x150/FFD700/000000?text=Affiliate+Ad" alt="Affiliate Product Ad" class="mx-auto my-2 rounded-md">
+                <a href="#" class="inline-block bg-yellow-600 text-white px-4 py-2 rounded-md hover:bg-yellow-700 transition-colors duration-200">Click Here to Learn More!</a>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="scroll-to-top bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white p-4 mt-6 rounded-t-lg">
+        <div class="container mx-auto text-center text-sm">
+            <p>&copy; 2025 Your Niche Blog. All rights reserved.</p>
+            <p class="mt-2">
+                <a href="terms-of-service-en.html" class="hover:text-gray-300">Terms of Service</a> |
+                <a href="privacy-policy-en.html" class="hover:text-gray-300">Privacy Policy</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Shared JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title of Your Blog Post - Your Niche Blog Title</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS file (relative path from posts/ to root/) -->
+    <link href="../style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Google Analytics Tracking Code Placeholder (same as index.html) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Header Section (same as index.html) -->
+    <header class="bg-blue-600 text-white p-4 shadow-md rounded-b-lg">
+        <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center">
+            <h1 class="text-3xl font-bold mb-2 sm:mb-0">
+                <a href="../index.html" class="hover:text-blue-200">Your Awesome Niche Blog</a>
+            </h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="../about.html" class="hover:text-blue-200 text-lg">About</a></li>
+                    <li><a href="../contact.html" class="hover:text-blue-200 text-lg">Contact</a></li>
+                    <li><a href="../privacy-policy.html" class="hover:text-blue-200 text-lg">Privacy Policy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area for a Single Post -->
+    <main class="container mx-auto p-4 flex flex-col lg:flex-row gap-6 flex-grow content-area">
+        <section class="lg:w-3/4 bg-white p-6 rounded-lg shadow-md">
+            <h1 class="text-3xl font-bold text-gray-800 mb-4">The Title of Your Amazing Blog Post Here</h1>
+            <p class="text-gray-600 text-sm mb-6">Published on June 27, 2025 by [Your Name] in [Category]</p>
+
+            <!-- Main image for the post -->
+            <img src="../images/post-1-image.png" alt="Descriptive alt text for your main image" class="w-full h-auto rounded-md mb-6 object-cover">
+
+            <div class="prose max-w-none text-gray-700 leading-relaxed">
+                <p>This is where the main content of your blog post will go. Write engagingly about your niche topic!</p>
+                <p>You can add multiple paragraphs, lists, and other formatting here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                <h2>A Sub-Heading for More Detail</h2>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <!-- Another image within the post -->
+                <img src="https://placehold.co/700x350/C0C0C0/000000?text=Another+Post+Image" alt="Another supporting image for the post" class="w-full h-auto rounded-md my-6 object-cover">
+
+                <p>Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus auctor iaculis. Mauris vel nisl eu ipsum suscipit malesuada. Praesent sit amet metus vel dolor dictum aliquet.</p>
+
+                <h3>Important Tips</h3>
+                <ul class="list-disc list-inside ml-4 mb-4">
+                    <li>Tip 1: Make your content informative.</li>
+                    <li>Tip 2: Use keywords naturally for SEO.</li>
+                    <li>Tip 3: Engage your readers with questions.</li>
+                </ul>
+
+                <!-- Placeholder for AdSense Ad Unit within the post -->
+                <div class="bg-gray-100 p-4 border border-gray-300 rounded-md text-center text-gray-500 text-sm my-6">
+                    ADVERTISEMENT (Google AdSense Placeholder within post)
+                </div>
+
+                <p>Feel free to embed videos, more images, or any other media relevant to your post here. The goal is to provide maximum value to your readers.</p>
+            </div>
+
+            <!-- Back to blog link -->
+            <div class="mt-8 pt-4 border-t border-gray-200">
+                <a href="../index.html" class="text-blue-600 hover:underline">&larr; Back to Latest Posts</a>
+            </div>
+        </section>
+
+        <!-- Sidebar Section (same as index.html) -->
+        <aside class="lg:w-1/4 bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4 border-b pb-2">About This Blog</h3>
+            <p class="text-gray-700 mb-6">
+                Welcome to my niche blog about **[Your Specific Niche]**! Here, you'll find in-depth articles, helpful guides, and honest reviews to help you **[achieve a goal related to your niche]**.
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-4 border-b pb-2">Popular Posts</h3>
+            <ul class="list-disc list-inside mb-6 text-blue-600">
+                <li><a href="#" class="hover:underline">Post Title 1</a></li>
+                <li><a href="#" class="hover:underline">Post Title 2</a></li>
+                <li><a href="#" class="hover:underline">Post Title 3</a></li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-4 border-b pb-2">Affiliate Offer / Ad Slot</h3>
+            <div class="bg-yellow-100 p-4 border border-yellow-300 rounded-md text-center text-gray-700 text-sm">
+                <p class="font-bold mb-2">Special Offer: Get X% Off [Related Product]!</p>
+                <img src="https://placehold.co/250x150/FFD700/000000?text=Affiliate+Ad" alt="Affiliate Product Ad" class="mx-auto my-2 rounded-md">
+                <a href="#" class="inline-block bg-yellow-600 text-white px-4 py-2 rounded-md hover:bg-yellow-700 transition-colors duration-200">Click Here to Learn More!</a>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Scroll to Top Button (same as index.html) -->
+    <button id="scrollToTopBtn" class="scroll-to-top bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+
+    <!-- Footer Section (same as index.html) -->
+    <footer class="bg-gray-800 text-white p-4 mt-6 rounded-t-lg">
+        <div class="container mx-auto text-center text-sm">
+            <p>&copy; 2025 Your Niche Blog. All rights reserved.</p>
+            <p class="mt-2">
+                <a href="../terms-of-service.html" class="hover:text-gray-300">Terms of Service</a> |
+                <a href="../privacy-policy.html" class="hover:text-gray-300">Privacy Policy</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript (relative path from posts/ to root/) -->
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+/* Custom styles for your niche blog */
+
+/* Apply Inter font and a light background to the body */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc; /* Equivalent to Tailwind's bg-slate-50 */
+}
+
+/* Ensure the main content area takes up enough vertical space to push the footer down */
+.content-area {
+    min-height: 60vh;
+}
+
+/* Styles for the scroll-to-top button */
+.scroll-to-top {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixes it relative to the viewport */
+    bottom: 20px; /* Distance from the bottom of the viewport */
+    right: 20px; /* Distance from the right of the viewport */
+    z-index: 1000; /* Ensures it's above other content */
+    cursor: pointer; /* Changes cursor to a pointer on hover */
+    /* Tailwind classes are already applied in HTML for background, padding, rounding, shadow, hover */
+}
+
+/* Add any other custom styles here if Tailwind classes aren't sufficient */
+/* For example, if you wanted a specific shadow or border not directly in Tailwind */
+/* .my-custom-card {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ddd;
+} */
